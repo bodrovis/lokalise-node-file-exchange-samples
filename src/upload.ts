@@ -46,9 +46,17 @@ async function main() {
 			processUploadFileParams,
 		});
 
-		console.log(processes);
-		console.log("=====");
-		console.log(errors);
+		for (const process of processes) {
+			console.log(process.created_at)
+			console.log(process.status)
+			console.log(process.details);
+			console.log('===')
+		}
+
+		if (errors.length > 0 ) {
+			console.log("Errors:");
+			console.log(errors);
+		}
 	} catch (error) {
 		console.error(error);
 	}

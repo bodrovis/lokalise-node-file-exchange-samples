@@ -1,0 +1,25 @@
+{
+	"name": "file-exch-sample",
+	"version": "1.0.0",
+	"scripts": {
+		"upload": "tsx src/upload.ts",
+		"download": "tsx src/download.ts",
+		"lint:fix": "npx @biomejs/biome check --write ./",
+		"lint:fix:unsafe": "npx @biomejs/biome check --write --unsafe ./"
+	},
+	"type": "module",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.0",
+		"@types/node": "^22.10.2",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.2"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.7",
+		"lokalise-file-exchange": "git+https://github.com/bodrovis/lokalise-node-file-exchange.git"
+	}
+}

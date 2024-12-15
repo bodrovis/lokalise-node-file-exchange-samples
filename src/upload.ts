@@ -20,6 +20,7 @@ async function main() {
 	const lokaliseUploader = new LokaliseUpload(
 		{
 			apiKey, // Your Lokalise API token
+			enableCompression: true,
 		},
 		{
 			projectId, // Your Lokalise project ID

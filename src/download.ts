@@ -16,6 +16,7 @@ async function main() {
 	const lokaliseDownloader = new LokaliseDownload(
 		{
 			apiKey, // Your Lokalise API token
+			enableCompression: true,
 		},
 		{
 			projectId, // Your Lokalise project ID

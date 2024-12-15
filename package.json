@@ -8,9 +8,9 @@
 		"lint:fix:unsafe": "npx @biomejs/biome check --write --unsafe ./"
 	},
 	"type": "module",
+	"license": "BSD-3-Clause",
 	"keywords": [],
 	"author": "",
-	"license": "ISC",
 	"description": "",
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.0",
@@ -21,5 +21,9 @@
 	"dependencies": {
 		"dotenv": "^16.4.7",
 		"lokalise-file-exchange": "git+https://github.com/bodrovis/lokalise-node-file-exchange.git"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bodrovis/lokalise-node-file-exchange-samples.git"
 	}
 }

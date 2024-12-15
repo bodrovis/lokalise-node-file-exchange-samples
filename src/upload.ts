@@ -1,3 +1,5 @@
+// Uploading samples
+// Learn more at https://github.com/bodrovis/lokalise-node-file-exchange?tab=readme-ov-file#performing-translation-file-uploads
 import * as dotenv from "dotenv";
 dotenv.config();
 
@@ -29,10 +31,28 @@ async function main() {
 		replace_modified: true, // Replace modified files on Lokalise
 	};
 
-	// Define file collection parameters
+	// Define file collection parameters, various approaches:
+
+	// Example: Collecting JSON and XML files under the locales directory (including nested folders)
+	// const collectFileParams: CollectFileParams = {
+	// 	inputDirs: ["./locales"], // Directories to collect files from
+	// 	extensions: [".json", "xml"], // Collect JSON and XML files
+	// 	recursive: true, // Collect files in all nested folders
+	// };
+
+	// Example: Collecting JSON files directly under locales directory (while providing absolute path)
+	// const localesPath = path.resolve("locales");
+	// const collectFileParams: CollectFileParams = {
+	// 	inputDirs: [localesPath], // Absolute path to the "locales" directory
+	// 	extensions: [".json"], // Collect only JSON files
+	// 	recursive: false, // Only collect files in the root directory
+	// };
+
+	// Example: Collecting only the file named "en.json"
 	const collectFileParams: CollectFileParams = {
-		inputDirs: ["./locales"], // Directories to collect files from
-		extensions: [".json"], // Collect only JSON files
+		inputDirs: ["./locales"],
+		extensions: [".json"],
+		fileNamePattern: "^en\\.json$", // Regex to match only "en.json"
 		recursive: false, // Only collect files in the root directory
 	};
 
@@ -70,7 +90,9 @@ async function main() {
 		// Handle and log any errors
 		if (errors.length > 0) {
 			console.error("Errors during upload:");
-			console.error(errors);
+			for (const error of errors) {
+				console.error(error);
+			}
 		}
 	} catch (error) {
 		// Handle unexpected errors

@@ -1,3 +1,5 @@
+// Downloading samples
+// Learn more at https://github.com/bodrovis/lokalise-node-file-exchange?tab=readme-ov-file#performing-translation-file-downloads
 import * as dotenv from "dotenv";
 dotenv.config();
 

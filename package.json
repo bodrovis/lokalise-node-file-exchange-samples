@@ -20,7 +20,7 @@
 	},
 	"dependencies": {
 		"dotenv": "^16.4.7",
-		"lokalise-file-exchange": "git+https://github.com/bodrovis/lokalise-node-file-exchange.git"
+		"lokalise-file-exchange": "^1.0.0"
 	},
 	"repository": {
 		"type": "git",

@@ -36,11 +36,11 @@ async function main() {
 		outputDir: "./", // Target directory for extracted files
 	};
 
-	// const processDownloadFileParams = {
-  //   asyncDownload: true, // Download in background
-  //   pollInitialWaitTime: 1000, // Initial wait time before checking background process status
-  //   pollMaximumWaitTime: 10000, // Maxiumum wait time before exiting with timeout
-  // };
+	const processDownloadFileParams = {
+		asyncDownload: true, // Download in background
+		pollInitialWaitTime: 1000, // Initial wait time before checking background process status
+		pollMaximumWaitTime: 10000, // Maxiumum wait time before exiting with timeout
+	};
 
 	try {
 		// Download and extract translations
@@ -49,7 +49,7 @@ async function main() {
 			downloadFileParams,
 			extractParams,
 			// Background downloading, enable only for large projects:
-			// processDownloadFileParams,
+			processDownloadFileParams,
 		});
 		console.log("Download completed successfully!");
 	} catch (error) {

@@ -33,13 +33,14 @@ async function main() {
 
 	// Define extraction parameters
 	const extractParams: ExtractParams = {
-		outputDir: "./", // Target directory for extracted files
+		outputDir: "./1", // Target directory for extracted files
 	};
 
 	const processDownloadFileParams = {
 		asyncDownload: true, // Download in background
 		pollInitialWaitTime: 1000, // Initial wait time before checking background process status
 		pollMaximumWaitTime: 10000, // Maxiumum wait time before exiting with timeout
+		bundleDownloadTimeout: 10000, // Timeout for the translation bundle download
 	};
 
 	try {

@@ -4,7 +4,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import path from "node:path";
-import type { UploadFileParams } from "@lokalise/node-api";
+import type { PartialUploadFileParams } from "lokalise-file-exchange";
 import { LokaliseUpload } from "lokalise-file-exchange";
 import type {
 	CollectFileParams,
@@ -28,7 +28,7 @@ async function main() {
 	);
 
 	// Define upload-specific parameters
-	const uploadFileParams: Partial<UploadFileParams> = {
+	const uploadFileParams: Partial<PartialUploadFileParams> = {
 		replace_modified: true, // Replace modified files on Lokalise
 	};
 
@@ -69,6 +69,10 @@ async function main() {
 			} catch (_error) {
 				return "";
 			}
+		},
+		filenameInferer: (filePath) => {
+			// Custom logic to infer the filename
+			return path.basename(filePath);
 		},
 	};
 

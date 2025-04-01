@@ -20,7 +20,7 @@
 	},
 	"dependencies": {
 		"dotenv": "^16.4.7",
-		"lokalise-file-exchange": "^2.0.0"
+		"lokalise-file-exchange": "^2.1.0"
 	},
 	"repository": {
 		"type": "git",

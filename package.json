@@ -4,6 +4,7 @@
 	"scripts": {
 		"upload": "tsx src/upload.ts",
 		"download": "tsx src/download.ts",
+		"api": "tsx src/api.ts",
 		"lint:fix": "npx @biomejs/biome check --write ./",
 		"lint:fix:unsafe": "npx @biomejs/biome check --write --unsafe ./"
 	},
@@ -19,8 +20,9 @@
 		"typescript": "^5.7.2"
 	},
 	"dependencies": {
+		"@lokalise/node-api": "14.3.0",
 		"dotenv": "^16.4.7",
-		"lokalise-file-exchange": "^2.1.0"
+		"lokalise-file-exchange": "^3.0.0"
 	},
 	"repository": {
 		"type": "git",

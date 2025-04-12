@@ -28,7 +28,7 @@ async function main() {
 	);
 
 	// Define upload-specific parameters
-	const uploadFileParams: Partial<PartialUploadFileParams> = {
+	const uploadFileParams: PartialUploadFileParams = {
 		replace_modified: true, // Replace modified files on Lokalise
 	};
 

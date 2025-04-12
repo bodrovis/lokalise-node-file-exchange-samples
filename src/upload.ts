@@ -4,10 +4,10 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 import path from "node:path";
-import type { PartialUploadFileParams } from "lokalise-file-exchange";
 import { LokaliseUpload } from "lokalise-file-exchange";
 import type {
 	CollectFileParams,
+	PartialUploadFileParams,
 	ProcessUploadFileParams,
 } from "lokalise-file-exchange";
 

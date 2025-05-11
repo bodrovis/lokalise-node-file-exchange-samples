@@ -20,9 +20,9 @@
 		"typescript": "^5.7.2"
 	},
 	"dependencies": {
-		"@lokalise/node-api": "14.3.0",
+		"@lokalise/node-api": "^14.3.0",
 		"dotenv": "^16.4.7",
-		"lokalise-file-exchange": "^3.0.0"
+		"lokalise-file-exchange": "^3.1.0"
 	},
 	"repository": {
 		"type": "git",

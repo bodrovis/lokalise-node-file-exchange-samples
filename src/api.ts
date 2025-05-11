@@ -6,15 +6,15 @@ import { LokaliseApi, LokaliseApiOAuth } from "@lokalise/node-api";
 const _apiKey = process.env.LOKALISE_API_TOKEN as string;
 
 async function main() {
-	// const lokaliseApi = new LokaliseApi({ apiKey });
+	// // const lokaliseApi = new LokaliseApi({ apiKey });
 
-	// const project = await lokaliseApi.projects().get('');
-	// console.log(project);
+	// // const project = await lokaliseApi.projects().get('');
+	// // console.log(project);
 
-	const lokaliseApiOauth = new LokaliseApiOAuth({ apiKey: "" });
+	// const lokaliseApiOauth = new LokaliseApiOAuth({ apiKey: "" });
 
-	const projects = await lokaliseApiOauth.projects().list();
-	console.log(projects);
+	// const projects = await lokaliseApiOauth.projects().list();
+	// console.log(projects);
 }
 
 // Run the script

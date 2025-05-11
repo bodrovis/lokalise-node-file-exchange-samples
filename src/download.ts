@@ -20,6 +20,10 @@ async function main() {
 		},
 		{
 			projectId, // Your Lokalise project ID
+			// Set logging level
+			// debug will make it very talkative, enable only to... well, debug things
+			// default is "info"
+			logThreshold: "debug",
 		},
 	);
 

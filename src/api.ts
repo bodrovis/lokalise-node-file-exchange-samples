@@ -1,18 +1,17 @@
-import * as dotenv from "dotenv";
-dotenv.config();
+import { existsSync } from "node:fs";
+import { loadEnvFile } from "node:process";
 
-import { LokaliseApi, LokaliseApiOAuth } from "@lokalise/node-api";
+if (existsSync(".env")) {
+	loadEnvFile();
+}
 
 const _apiKey = process.env.LOKALISE_API_TOKEN as string;
 
 async function main() {
 	// // const lokaliseApi = new LokaliseApi({ apiKey });
-
 	// // const project = await lokaliseApi.projects().get('');
 	// // console.log(project);
-
 	// const lokaliseApiOauth = new LokaliseApiOAuth({ apiKey: "" });
-
 	// const projects = await lokaliseApiOauth.projects().list();
 	// console.log(projects);
 }

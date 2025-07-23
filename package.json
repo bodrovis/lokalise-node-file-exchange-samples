@@ -14,15 +14,14 @@
 	"author": "",
 	"description": "",
 	"devDependencies": {
-		"@biomejs/biome": "^1.9.0",
-		"@types/node": "^22.10.2",
+		"@biomejs/biome": "^2.1.2",
+		"@types/node": "^24.1.0",
 		"tsx": "^4.19.2",
 		"typescript": "^5.7.2"
 	},
 	"dependencies": {
-		"@lokalise/node-api": "^14.3.0",
-		"dotenv": "^16.4.7",
-		"lokalise-file-exchange": "^3.1.0"
+		"@lokalise/node-api": "^15.0.0",
+		"lokalise-file-exchange": "^4.0.0"
 	},
 	"repository": {
 		"type": "git",

@@ -1,11 +1,15 @@
 // Downloading samples
 // Learn more at https://github.com/bodrovis/lokalise-node-file-exchange?tab=readme-ov-file#performing-translation-file-downloads
-import * as dotenv from "dotenv";
-dotenv.config();
+import { existsSync } from "node:fs";
+import { loadEnvFile } from "node:process";
+
+if (existsSync(".env")) {
+	loadEnvFile();
+}
 
 import type { DownloadFileParams } from "@lokalise/node-api";
-import { LokaliseDownload } from "lokalise-file-exchange";
 import type { ExtractParams } from "lokalise-file-exchange";
+import { LokaliseDownload } from "lokalise-file-exchange";
 
 // Load Lokalise API token and project ID from environment variables
 const apiKey = process.env.LOKALISE_API_TOKEN as string;

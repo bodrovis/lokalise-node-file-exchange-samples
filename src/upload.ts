@@ -50,20 +50,20 @@ async function main() {
 	// };
 
 	// Example: Collecting JSON files directly under locales directory (while providing absolute path)
-	// const localesPath = path.resolve("locales");
-	// const collectFileParams: CollectFileParams = {
-	// 	inputDirs: [localesPath], // Absolute path to the "locales" directory
-	// 	extensions: [".json"], // Collect only JSON files
-	// 	recursive: false, // Only collect files in the root directory
-	// };
-
-	// Example: Collecting only the file named "en.json"
+	const localesPath = path.resolve("locales");
 	const collectFileParams: CollectFileParams = {
-		inputDirs: ["./locales"],
-		extensions: [".json"],
-		fileNamePattern: "^en\\.json$", // Regex to match only "en.json"
+		inputDirs: [localesPath], // Absolute path to the "locales" directory
+		extensions: [".json"], // Collect only JSON files
 		recursive: false, // Only collect files in the root directory
 	};
+
+	// Example: Collecting only the file named "en.json"
+	// const collectFileParams: CollectFileParams = {
+	// 	inputDirs: ["./locales"],
+	// 	extensions: [".json"],
+	// 	fileNamePattern: "^en\\.json$", // Regex to match only "en.json"
+	// 	recursive: false, // Only collect files in the root directory
+	// };
 
 	// Define advanced processing parameters
 	const processUploadFileParams: ProcessUploadFileParams = {

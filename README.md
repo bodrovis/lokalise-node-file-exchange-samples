@@ -11,7 +11,7 @@ Samples for the [lokalise-node-file-exchange](https://github.com/bodrovis/lokali
 2. Copy `.env.sample` as `.env` and provide your Lokalise API token and project ID inside.
 3. Run `npm run upload` to upload files.
 4. Run `npm run download` to download files.
-5. These scripts interact with production, so ensure you're experimenting with a demo project.
+5. **These scripts interact with production**, so ensure you're experimenting with a demo project.
 
 ## License
 

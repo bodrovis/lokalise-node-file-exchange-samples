@@ -20,8 +20,8 @@
 		"typescript": "^6.0.2"
 	},
 	"dependencies": {
-		"@lokalise/node-api": "^15.7.1",
-		"lokalise-file-exchange": "^4.2.0"
+		"@lokalise/node-api": "^16.0.0",
+		"lokalise-file-exchange": "^5.0.0"
 	},
 	"repository": {
 		"type": "git",
@@ -29,5 +29,8 @@
 	},
 	"engines": {
 		"node": ">=20"
+	},
+	"allowScripts": {
+		"esbuild@0.28.0": true
 	}
 }

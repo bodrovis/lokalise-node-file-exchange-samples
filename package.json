@@ -15,22 +15,22 @@
 	"description": "",
 	"devDependencies": {
 		"@biomejs/biome": "^2.1.2",
-		"@types/node": "^25.5.2",
+		"@types/node": "^26.1.1",
 		"tsx": "^4.19.2",
-		"typescript": "^6.0.2"
+		"typescript": "^7.0.2"
 	},
 	"dependencies": {
-		"@lokalise/node-api": "^16.0.0",
-		"lokalise-file-exchange": "^5.0.0"
+		"@lokalise/node-api": "^16.1.0",
+		"lokalise-file-exchange": "^5.1.0"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/bodrovis/lokalise-node-file-exchange-samples.git"
 	},
 	"engines": {
-		"node": ">=20"
+		"node": ">=22.19.0"
 	},
 	"allowScripts": {
-		"esbuild@0.28.0": true
+		"esbuild@0.28.1": true
 	}
 }

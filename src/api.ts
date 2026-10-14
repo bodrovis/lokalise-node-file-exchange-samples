@@ -11,7 +11,9 @@ const apiKey = process.env.LOKALISE_API_TOKEN as string;
 
 async function main() {
 	const lokaliseApi = new LokaliseApi({ apiKey });
-	const project = await lokaliseApi.projects().get("");
+	const project = await lokaliseApi
+		.projects()
+		.get("7565202469c53c30428ce0.33693563");
 	console.log(project);
 	// const lokaliseApiOauth = new LokaliseApiOAuth({ apiKey: "" });
 	// const projects = await lokaliseApiOauth.projects().list();

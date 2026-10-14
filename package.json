@@ -21,7 +21,7 @@
 	},
 	"dependencies": {
 		"@lokalise/node-api": "^16.1.0",
-		"lokalise-file-exchange": "^5.2.0"
+		"lokalise-file-exchange": "^6.0.0"
 	},
 	"repository": {
 		"type": "git",
